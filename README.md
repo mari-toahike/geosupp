@@ -7,4 +7,4 @@ Rest is optional, but (allegedly) useful!
 
 ## Requirements:
 - **Firefox**\Chrome(support depreceated)
-- **[Violentmonkey](https://violentmonkey.github.io/)**\[Tampermonkey](https://www.tampermonkey.net/) extention
+- ** [Violentmonkey](https://violentmonkey.github.io/) **\ [Tampermonkey](https://www.tampermonkey.net/) extention
