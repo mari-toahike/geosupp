@@ -1,11 +1,11 @@
 // ==UserScript==
 // @name         Online call highlighter
 // @namespace    http://tishka.xyz/
-// @version      2.5
+// @version      2.51
 // @description  highlights element[also english]
 // @updateURL    https://maritoahike.neocities.org/utils/TISHKA_BACKUP/Online%20call%20highlighter.user.js
 // @downloadURL  https://maritoahike.neocities.org/utils/TISHKA_BACKUP/Online%20call%20highlighter.user.js
-// @author       Tishka & maritoahike
+// @author       Tishka & maritoahike & v.zlobich
 // @match        https://my.livechatinc.com/*
 // @icon         https://www.google.com/s2/favicons?domain=mozilla.org
 // @grant        none
@@ -13,6 +13,7 @@
 
 
 //updated the dictionary
+// 26.01.2025 updated dictionarry by v.zlobich (mathilda ig, they did not provide credentials, not reviewed.)
 (async function() {
 
     function sleep(ms) {
@@ -23,7 +24,17 @@
 while(true) {
  await sleep(10)
 
-     const trigger = ["Онлайн", "Online", "Rückruf", "Llamada", "takaisinsoittoa", "de rappel", "Ligação por voz","Wezwanie online z anglojęzycznym agentem","Demande de rappel par un agent parlant anglais","Rückruf durch einen englischsprachigen Mitarbeiter anfordern","Llamada de un agente en inglés","英語でオンライン通話", "Geri arama talep edin", "Ligação por voz em inglês com um agente"];
+     const trigger = [
+        "Онлайн", "Online",
+        "Rückruf", "Llamada",
+        "takaisinsoittoa", "de rappel",
+        "Ligação por voz","Wezwanie online z anglojęzycznym agentem",
+        "Demande de rappel par un agent parlant anglais",
+        "Rückruf durch einen englischsprachigen Mitarbeiter anfordern",
+        "Llamada de un agente en inglés","英語でオンライン通話",
+        "Geri arama talep edin", 
+        "Ligação por voz em inglês com um agente", "Chiamata"
+    ];
      let bgColor = '#D64646' //Цвет подсветки hex;
 
      let callElem = document.getElementsByClassName("answer")[0];
