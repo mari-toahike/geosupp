@@ -16,5 +16,5 @@ Rest is optional, but (allegedly) useful!
 ## Partial updates:
 1. Find the latest of userscripts in hierchy, or one that you would like to install.
 2. Select "Raw" view form, your extention should manually open installation window.
-2b. Alternatively, copy and paste the script into new script template (little plus icon in your extention)
+2b. Alternatively, copy and paste the script into new script template (little plus icon in your extention).
    
