@@ -4,8 +4,10 @@
 // @match		   https://admin.crimson.*.prd.maxbit.private/*
 // @grant       none
 // @version     1.52
-// @author      Tishka with slight Tweaks from MariToai
+// @author      Tishka, VIR and Mari Toahike
 
+
+//whole  list of countries from Vir, much appreciated fam
 // ==/UserScript==
 if(window.location.href.match(/\/admin\/players\/[0-9]+/)){
     const countryID = document.querySelector(`.row.row-country td`).innerText;
@@ -206,6 +208,7 @@ if(window.location.href.match(/\/admin\/players\/[0-9]+/)){
       {"name": "Saudi Arabia", "code": "SA", "color": "gray"},
       {"name": "Senegal", "code": "SN", "color": "gray"},
       {"name": "Serbia and Montenegro", "code": "CS", "color": "gray"},
+      {"name": "Serbia", "code": "RS", "color": "gray"},
       {"name": "Seychelles", "code": "SC", "color": "gray"},
       {"name": "Sierra Leone", "code": "SL", "color": "gray"},
       {"name": "Singapore", "code": "SG", "color": "gray"},
