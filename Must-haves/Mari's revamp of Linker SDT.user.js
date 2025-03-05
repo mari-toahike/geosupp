@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Mari's revamp of Linker SDT
-// @version      1.7.8
+// @version      1.7.9
 // @description  updated linker
 // @author       Tishka slight edits from MariToahike
 // @updateURL    https://maritoahike.neocities.org/utils/LINKER_REVAMPED.user.js
@@ -29,6 +29,7 @@
 // фикс селектора архивы
 // фикс селекторов архива, ссылок по новой после теневого обновления лч
 // убраны все console.log для предотвращения забора оперативной памяти
+// фикс селектора группы в архивах
 
 (async function () {
     'use strict';
@@ -86,7 +87,7 @@
         let chatEmailSelector ; // селектор почты/телефона
         let chatProjectGroupSelector = ".css-1s5f4dg"; // селектор названия проекта в чатах
 	      let archiveEmailSelector = ".css-cinmy0";
-        const archiveProjectGroupSelector = ".css-1xt3h1w"; // селектор названия проекта в архивах
+        const archiveProjectGroupSelector = ".css-1hj22cr"; // селектор названия проекта в архивах
         const messagesListSelector = ".css-lft2wy" // селектор блока, в котором чат
         const chatBgSelector = ".css-qc8s26"; // селектор верхнего блока, который будет подсвечен
 
